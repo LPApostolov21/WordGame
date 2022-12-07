@@ -59,6 +59,7 @@ void game()
 		}
 		cin >> temp;
 		mistakescounter = true;
+		sistem("slc");
 	}
 }
 int main()
