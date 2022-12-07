@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <Windows.h>
 using namespace std;
 void game()
 {
