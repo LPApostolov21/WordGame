@@ -1,7 +1,18 @@
 #include <iostream>
 #include <cstring>
+#include <bits/stdc++.h> 
 #include <Windows.h>
 using namespace std;
+string cinword()
+{
+	string sentance;
+	cin.getline(sentance, 100, '\n');
+	return sentance;
+}
+void guess()
+{
+
+}
 void game()
 {
 	char sentance[100], temp = 0;
@@ -64,5 +75,5 @@ void game()
 }
 int main()
 {
-	game();
+	guess();
 }
