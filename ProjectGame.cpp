@@ -1,22 +1,13 @@
 #include <iostream>
+#include <iomanip>
+#include <windows.h> 
+#include <string>
 #include <cstring>
-#include <bits/stdc++.h> 
-#include <Windows.h>
 using namespace std;
-string cinword()
+void guess(string fakeSentance, int maxMistakes)
 {
-	string sentance;
-	cin.getline(sentance, 100, '\n');
-	return sentance;
-}
-void guess()
-{
-
-}
-void game()
-{
-	char sentance[100], temp = 0;
-	cin.getline(sentance, 100, '\n');
+	char temp = 0, sentance[100];
+	strcpy_s(sentance, fakeSentance.c_str());
 	bool counter = false, mistakescounter = false;
 	int mistakes = 0, arr[100];
 	for (size_t i = 0; i < strlen(sentance); i++)
@@ -30,6 +21,7 @@ void game()
 			arr[i] = 2;
 		}
 	}
+	system("cls");
 	while (counter != true)
 	{
 		counter = true;
@@ -54,10 +46,10 @@ void game()
 		{
 			mistakes++;
 		}
-		cout << "  " << mistakes << "/5 MISTAKES";
+		cout << "  " << mistakes << "/" << maxMistakes << " MISTAKES";
 		cout << '\n';
 		//LOSE CONDITION
-		if (mistakes >= 5)
+		if (mistakes >= maxMistakes)
 		{
 			cout << "YOU LOSE!";
 			break;
@@ -70,10 +62,50 @@ void game()
 		}
 		cin >> temp;
 		mistakescounter = true;
-		sistem("slc");
+		system("cls");
 	}
 }
 int main()
 {
-	guess();
+	system("Color 0D");
+	int choose, mistakes;
+	string word;
+	cout << setw(52) << "_________" << endl;
+	cout << "||" << setw(5) << "||" << setw(10) << "//\\\\" << setw(12) << "||\\\\" << setw(6) << "||" << setw(17) << "||=========" << setw(27) << "||\\\\" << setw(10) << "//||" << endl;
+	cout << "||" << setw(5) << "||" << setw(11) << "//  \\\\" << setw(9) << "||" << setw(3) << "\\\\" << setw(5) << "||" << setw(8) << "||" << setw(34) << "||" << setw(3) << "\\\\" << setw(6) << "//" << setw(3) << "||" << endl;
+	cout << "||===||" << setw(12) << "//====\\\\" << setw(8) << "||" << setw(4) << "\\\\" << setw(4) << "||" << setw(8) << "||" << setw(8) << "____" << setw(26) << "||" << setw(4) << "\\\\" << setw(4) << "//" << setw(4) << "||" << endl;
+	cout << "||" << setw(5) << "||" << setw(13) << "//      \\\\" << setw(7) << "||" << setw(5) << "\\\\" << setw(3) << "||" << setw(8) << "||" << setw(9) << "|===||" << setw(25) << "||" << setw(7) << "\\\\//" << setw(5) << "||" << endl;
+	cout << "||" << setw(5) << "||" << setw(14) << "//        \\\\" << setw(6) << "||" << setw(8) << "\\\\||" << setw(8) << "||" << "_______" << "||" << setw(25) << "||" << setw(12) << "||" << endl;
+	cout << setw(70) << "Project on theme WordGame";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "-------------LAZAR-------------------------------------->" << setw(3) << "1. Play" << setw(3) << "<---------------------KRISTINA-------------------------" << endl;
+	cout << "-----------BOJIDAR-------------------------------------->" << setw(3) << "2. Creators" << setw(3) << "<-------------------IVAN---------------------------" << endl;
+	cout << "-------------------------------------------------------->" << setw(3) << "3. Exit" << setw(3) << "<------------------------------------------------------" << endl;
+	cout << "\n";
+	cout << "\n";
+	cout << setw(70) << "Input your choose here:";
+	cin >> choose;
+	switch (choose)
+	{
+	case 1:
+		system("cls");
+		cout << "Choose your word: ";
+		cin >> word;
+		system("cls");
+		cout << "Choose your maximum mistakes: ";
+		cin >> mistakes;
+		guess(word, mistakes);
+		break;
+	case 2:
+		system("cls");
+		cout << "You are meeting the creators here.";
+		break;
+	case 3:
+		system("cls");
+		cout << "You have just exited the game.";
+		break;
+	}
 }
+
