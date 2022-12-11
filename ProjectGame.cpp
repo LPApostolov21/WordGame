@@ -68,7 +68,7 @@ void guess(string fakeSentance, int maxMistakes)
 int main()
 {
     system("Color 0D");
-    int chooseOne, chooseTwo, mistakes;
+    int choose, chooseTwo, mistakes;
     string word;
     cout << setw(52) << "_________" << endl;
     cout << "||" << setw(5) << "||" << setw(10) << "//\\\\" << setw(12) << "||\\\\" << setw(6) << "||" << setw(17) << "||=========" << setw(27) << "||\\\\" << setw(10) << "//||" << setw(10) << "//\\\\" << setw(12) << "||\\\\" << setw(6) << "||" << endl;
@@ -86,8 +86,8 @@ int main()
     cout << "\n";
     cout << "\n";
     cout << setw(70) << "Input your choose here:";
-    cin >> chooseOne;
-    switch (chooseOne)
+    cin >> choose;
+    switch (choose)
     {
     case 1:
         system("cls");
