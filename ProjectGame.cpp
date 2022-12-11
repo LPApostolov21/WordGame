@@ -9,7 +9,7 @@ void guess(string fakeSentance, int maxMistakes)
     char temp = 0, sentance[100];
     strcpy_s(sentance, fakeSentance.c_str());
     bool counter = false, mistakescounter = false;
-    int mistakes = 0, arr[100];
+    int mistakes = 0, arr[100], choice;
     for (size_t i = 0; i < strlen(sentance); i++)
     {
         if ((sentance[i] < 65 || sentance[i]>90) && (sentance[i] > 122 || sentance[i] < 97))
@@ -51,13 +51,38 @@ void guess(string fakeSentance, int maxMistakes)
         //LOSE CONDITION
         if (mistakes >= maxMistakes)
         {
-            cout << "YOU LOSE!";
-            break;
+            cout << "YOU LOST!" << '\n' << '\n' << "1. Play again" << '\n' << "2. Exit" << '\n' << "Input: ";
+            cin >> choice;
+            switch (choice)
+            {
+            case 1: system("cls");
+                cout << "Choose your word: ";
+                cin >> fakeSentance;
+                system("cls");
+                cout << "Choose your maximum mistakes: ";
+                cin >> maxMistakes;
+                guess(fakeSentance, maxMistakes); break;
+            default: break;
+                break;
+            }
         }
+
         //WIN CONDITION
         if (counter == true)
         {
-            cout << "YOU WIN!";
+            cout << "YOU WIN!" << '\n' << '\n' << "1. Play again" << '\n' << "2. Exit" << '\n' << "Input: ";
+            cin >> choice;
+            switch (choice)
+            {
+            case 1: system("cls");
+                cout << "Choose your word: ";
+                cin >> fakeSentance;
+                system("cls");
+                cout << "Choose your maximum mistakes: ";
+                cin >> maxMistakes;
+                guess(fakeSentance, maxMistakes); break;
+            default: break;
+            }
             break;
         }
         cin >> temp;
@@ -68,7 +93,7 @@ void guess(string fakeSentance, int maxMistakes)
 int main()
 {
     system("Color 0D");
-    int choose, chooseTwo, mistakes;
+    int choose, mistakes;
     string word;
     cout << setw(52) << "_________" << endl;
     cout << "||" << setw(5) << "||" << setw(10) << "//\\\\" << setw(12) << "||\\\\" << setw(6) << "||" << setw(17) << "||=========" << setw(27) << "||\\\\" << setw(10) << "//||" << setw(10) << "//\\\\" << setw(12) << "||\\\\" << setw(6) << "||" << endl;
