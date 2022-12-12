@@ -51,7 +51,12 @@ void guess(string fakeSentance, int maxMistakes)
         //LOSE CONDITION
         if (mistakes >= maxMistakes)
         {
-            cout << "YOU LOST!" << '\n' << '\n' << "1. Play again" << '\n' << "2. Exit" << '\n' << "Input: ";
+            system("cls");
+            cout << setw(49) << "_____" << setw(33) << "____" << setw(10) << "____" << setw(10) << "_______" << endl;
+            cout << setw(35) << "\\" << setw(4) << "/" << setw(5) << "|" << setw(6) << "|" << setw(5) << "|" << setw(4) << "|" << setw(10) << "|" << setw(9) << "|" << setw(5) << "|" << setw(9) << "|____" << setw(7) << "|" << endl;
+            cout << setw(38) << "\\ /" << setw(6) << "|" << setw(6) << "|" << setw(5) << "|" << setw(4) << "|" << setw(10) << "|" << setw(9) << "|" << setw(5) << "|" << setw(10) << "|" << setw(6) << "|" << endl;
+            cout << setw(37) << "|" << setw(13) << "|_____|" << setw(11) << "|___|_'" << setw(12) << "|____" << setw(10) << "|____|" << setw(10) << "____|" << setw(6) << "|" << endl;
+            cout << "1. Play again" << '\n' << "2. Exit" << '\n' << "Input: ";
             cin >> choice;
             switch (choice)
             {
@@ -70,7 +75,11 @@ void guess(string fakeSentance, int maxMistakes)
         //WIN CONDITION
         if (counter == true)
         {
-            cout << "YOU WIN!" << '\n' << '\n' << "1. Play again" << '\n' << "2. Exit" << '\n' << "Input: ";
+            cout << setw(49) << "_____" << setw(39) << "_____" << endl;
+            cout << setw(35) << "\\" << setw(4) << "/" << setw(5) << "|" << setw(6) << "|" << setw(5) << "|" << setw(4) << "|" << setw(10) << "\\" << setw(9) << "/" << setw(5) << "|" << setw(6) << "|" << setw(6) << "|\\" << setw(3) << "|" << endl;
+            cout << setw(38) << "\\ /" << setw(6) << "|" << setw(6) << "|" << setw(5) << "|" << setw(4) << "|" << setw(11) << "\\" << setw(4) << "/\\" << setw(3) << "/" << setw(6) << "|" << setw(6) << "|" << setw(5) << "|" << setw(2) << "\\" << setw(2) << "|" << endl;
+            cout << setw(37) << "|" << setw(13) << "|_____|" << setw(11) << "|___|_'" << setw(11) << "\\/" << setw(4) << "\\/" << setw(13) << "|_____|" << setw(5) << "|" << setw(4) << "\\|" << endl;
+            cout << "1. Play again" << '\n' << "2. Exit" << '\n' << "Input: ";
             cin >> choice;
             switch (choice)
             {
