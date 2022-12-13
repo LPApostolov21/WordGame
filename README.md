@@ -9,9 +9,9 @@
                                          
                                          
                                          
-                                                      Main Idea: The main idea was to enable two players
-                                                      to compete to see who could guess more words given 
-                                                      by the opposing player.
+                                           Main Idea: The main idea was to enable two players
+                                           to compete to see who could guess more words given 
+                                           by the opposing player.
                                                       
                                                       
                                                       
