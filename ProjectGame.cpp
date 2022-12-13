@@ -60,7 +60,8 @@ void guess(string fakeSentance, int maxMistakes)
             cin >> choice;
             switch (choice)
             {
-            case 1: system("cls");
+            case 1:
+                system("cls");
                 cout << "Choose your word: ";
                 cin >> fakeSentance;
                 system("cls");
@@ -68,8 +69,8 @@ void guess(string fakeSentance, int maxMistakes)
                 cin >> maxMistakes;
                 guess(fakeSentance, maxMistakes); break;
             default: break;
-                break;
             }
+            break;
         }
 
         //WIN CONDITION
@@ -83,7 +84,8 @@ void guess(string fakeSentance, int maxMistakes)
             cin >> choice;
             switch (choice)
             {
-            case 1: system("cls");
+            case 1:
+                system("cls");
                 cout << "Choose your word: ";
                 cin >> fakeSentance;
                 system("cls");
