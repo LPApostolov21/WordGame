@@ -12,3 +12,12 @@
                                                       Main Idea: The main idea was to enable two players
                                                       to compete to see who could guess more words given 
                                                       by the opposing player.
+                                                      
+                                                      
+                                                      
+                                                      
+                                           Our team:
+                                           LPApostolov21@codingburgas.bg
+                                           BNDukov21@codingburgas.bg
+                                           KMZheleva21@codingburgas.bg
+                                           INTsvyatkov21@codingburgas.bg
