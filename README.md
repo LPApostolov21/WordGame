@@ -21,3 +21,8 @@
                                            BNDukov21@codingburgas.bg
                                            KMZheleva21@codingburgas.bg
                                            INTsvyatkov21@codingburgas.bg
+                                           
+                                           
+                                           
+                                           Installing:
+                                           https://github.com/LPApostolov21/WordGame
