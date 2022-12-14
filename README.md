@@ -1,4 +1,4 @@
-<h1 align="center">Words and Math Games</h1>
+<h1 align="center">Word Game</h1>
 <h6 align="center">PeakPerformers</h6>
 <p align="center">
 <img src="https://github.com/LPApostolov21/WordGame/blob/main/Documents/logo.jpg" width="1000px">
@@ -27,7 +27,7 @@
  ## 🎬 Demo of the project
 
 <p align="center">
-<img src=" width = "500px" >
+<img src="https://github.com/LPApostolov21/WordGame/blob/main/Documents/demo.game.png" width = "500px" >
 </p>
  
    
